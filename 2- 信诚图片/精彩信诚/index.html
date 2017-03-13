@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>精彩信诚 看我的</title>
+	<style>
+	    html,body{
+	    	width: 100%;
+	    	height: 100%;
+	    	overflow: hidden;
+	    }
+		.spinner {
+	    	position:absolute;
+	    	top:50%;
+	    	left: 50%;
+	    	-webkit-transform:translate3d(-50%,-50%,0);
+	    }
+
+	    .spinner > div {
+	      width: 0.8rem;
+	      height: 0.8rem;
+	      background-color: #333;
+	      border-radius: 100%;
+	      display: inline-block;
+	      -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+	      animation: bouncedelay 1.4s infinite ease-in-out;
+	      /* Prevent first frame from flickering when animation starts */
+	      -webkit-animation-fill-mode: both;
+	      animation-fill-mode: both;
+	    }
+
+	    .spinner .bounce1 {
+	      -webkit-animation-delay: -0.32s;
+	      animation-delay: -0.32s;
+	    }
+
+	    .spinner .bounce2 {
+	      -webkit-animation-delay: -0.16s;
+	      animation-delay: -0.16s;
+	    }
+
+	    @-webkit-keyframes bouncedelay {
+	      0%, 80%, 100% { -webkit-transform: scale(0.0) }
+	      40% { -webkit-transform: scale(1.0) }
+	    }
+
+	    @keyframes bouncedelay {
+	      0%, 80%, 100% {
+	        transform: scale(0.0);
+	        -webkit-transform: scale(0.0);
+	      } 40% {
+	        transform: scale(1.0);
+	        -webkit-transform: scale(1.0);
+	      }
+	    }
+	    .loading1{
+	    	width:100%;
+	    	height: 100%;
+	    	position: fixed;
+	    	z-index: 999;
+	    	background: #fff;
+	    	top:0;
+	    	left:0;
+	    	-webkit-animation-duration:1s;
+   		    -webkit-animation-delay:0s;
+	    }
+	    #yin{
+    position: fixed;
+    z-index: 900;
+    right:5%;
+    top:2%;
+    width:30px;
+    height:30px;
+    overflow: hidden;
+    display: none;
+    -webkit-animation:zhuan1 infinite;
+    
+    -webkit-animation-duration:2s;
+}
+#yin img{
+    width:200%;
+}
+
+
+@-webkit-keyframes zhuan1
+{
+to{
+    -webkit-transform: rotate(360deg);
+}
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="loading1">
+	  	<div class="spinner">
+		      <div class="bounce1"></div>
+		      <div class="bounce2"></div>
+		      <div class="bounce3"></div>
+      	</div>
+	</div>
+	 <div id='yin'>
+      <img src="img/yin.png" alt="">
+     </div>
+    
+	<!--声音部件开始-->
+		<div style='display:none'>
+			 <audio src="ling.mp3" controls="controls"  hidden='true' loop='loop' style="position:absolute" id='ling'>您的浏览器不支持audio</audio>
+     		
+     		 <audio src="song.mp3" controls="controls"  hidden='true' style="position:absolute" id='myaudio'>您的浏览器不支持audio</audio>
+
+
+     		 <audio src="Waterfall.mp3" controls="controls"  hidden='true' loop='loop' style="position:absolute" id='myaudio2'>您的浏览器不支持audio</audio>
+    	</div>
+	<!--声音部件结束-->
+
+    <div class="loading2">
+    	<div class="loading2-content chui">
+    		<img src="img/loading1.jpg" alt="" class='go-back'>
+    		<span class='go-back'>人寿保险</span>
+    		<img src="img/loading2.jpg" alt="" class='go-back'>
+    		<i class='go-back' over='点击电话进入主题'>0%</i>
+    		<div class="tel go-back">
+    			<img src="img/tel-fly.jpg" alt="">
+    			<img src="img/tel.jpg" alt="">
+    			<img src="img/tel-zhuan.jpg" alt="">
+    			<span class='go-back'>1</span>
+    		</div>
+    	</div>
+    </div>
+
+
+    <div class="content">
+    	<div class="audio">
+    		<img src="img/one-bg.jpg" alt="" class="bg go-back">
+    		<div class="divs1 chui">
+    			<img src="img/one1.png" alt="" class="scaleBounce">
+    		    <em class="scaleBounce">
+    		    	<img src="img/onejia.png" alt="" class="tada1">
+    		    </em>
+    		    <img src="img/one2.jpg" alt="" class="scaleBounce">
+    			<img src="img/one3.png" alt="" class="scaleBounce">
+    			<span>
+    				<img src="img/sheng.jpg" alt="">
+    			</span>
+    		</div>
+    	</div>
+
+    	<div class="divs index go-back">
+    		<img src="img/index.jpg" alt="" class="bg indeximg">
+    		<div class="indexBottom enterUpBounce ">
+    			<img src="img/kou1.png" alt="" class='scaleBounce'>
+    			<p class='scaleBounce'>信诚人寿每位TSR他们每天给客户提供全方位的保障服务，满足客户对保险的需求。</p>
+    			<span class='scaleBounce'>据统计 信诚人寿每位TSR每天需要接听30位客户，在线时间为180分钟 </span>
+    		</div>
+    		<img src="img/scroll.png" alt="" class="scroll">	
+    	</div>
+
+
+    	<div class="teams divs">
+    		<div class="divs">
+    			<img src="img/team1.png" alt="">
+    			<img src="img/team2.png" alt="">
+    			<img src="img/team3.png" alt="">
+    			<img src="img/team4.png" alt="">
+    		</div>
+    		<div class="divjia">
+    			<img src="img/jia1.1.png" alt="" class="zoomInLeft">
+    			<img src="img/jia1.2.png" alt="" class="zoomInLeft">
+    			<img src="img/jia2.1.png" alt="" class="zoomInRight">
+    			<img src="img/jia2.2.png" alt="" class="zoomInRight">
+    			<img src="img/jia3.1.png" alt="" class="zoomInLeft">
+    			<img src="img/jia3.2.png" alt="" class="zoomInLeft">
+    		</div>
+    		<img src="img/scroll.png" alt="" class="scroll">
+    	</div>
+        <div class="tuan1 go-back">
+				<img src="img/phone6.jpg" alt="" >
+				<img src="img/scroll.png" alt="" class="scroll">
+			</div>
+
+
+    	<div class="bossCotent divs">
+    		<div class="divs boss">
+    			<div class="divs go-back">
+    				<img src="img/boss1.jpg" alt="" class="bg bossScale">
+    			</div>
+    			<img src="img/boss1.1.png" alt="" class="enterUpBounce">
+    		</div>
+    		 
+    		<div class="divs boss">
+    			<div class="divs go-back">
+    				<img src="img/boss2.jpg" alt="" class="bg bossScale">
+    			</div>
+    			<img src="img/boss2.1.png" alt="" class="enterUpBounce">
+    		</div>
+    		<div class="divs boss">
+    			<div class="divs go-back">
+    				<img src="img/boss3.jpg" alt="" class="bg bossScale">
+    			</div>
+    			<img src="img/boss3.1.png" alt="" class="enterUpBounce">
+    		</div>
+    		<div class="divs boss">
+    			<div class="divs go-back">
+    				<img src="img/boss4.jpg" alt="" class="bg bossScale">
+    			</div>
+    			<img src="img/boss4.1.png" alt="" class="enterUpBounce">
+    		</div>
+            <div class="divs go-back fen boss">
+				<img src="img/phone.jpg" alt="" class="go-back">
+			</div>
+			<div class="divs go-back fen boss">
+				<img src="img/fen.jpg" alt="" class="go-back">
+				<div class="divs fens" style='opacity:1' >
+					<div class="divs chui" style='height:auto;opacity:1'>
+						<img src="img/fen1.png" alt="" class="go-back">
+						<img src="img/fen2.png" alt="" class="go-back">
+						<img src="img/fen3.png" alt="" class="go-back">
+						<img src="img/fen4.png" alt="" class='click go-back'>
+						<img src="img/fen5.png" alt="" class='click go-back'>
+						<span class='tu'></span>
+						<span class='ge'></span>
+					</div>
+				</div>
+			</div>
+            <div class="last go-back boss">
+    			<img src="img/last.jpg" alt="" class="bounceInDown" style='bottom:auto'>
+    			<div class="lasts" style='opacity:1'>
+    				<img src="img/last1.png" alt="">
+    				<img src="img/last2.png" alt="">
+    				<img src="img/last3.png" alt="">
+    				<img src="img/last4.png" alt="">
+    			</div>
+    		</div>
+
+
+
+    		<div class="tishi divs">
+    			<img src="img/tishi.png" alt="">
+    		</div>
+    		<div class="pai go-back ">
+    		    <div class="scaleBounce">
+                    <img src="img/TSR.png" alt="" class="huas">
+                    <img src="img/TL.png" alt="" class="huas">
+    		    </div>
+    		    <span>x</span>
+    		</div>
+    		<div class="xiang">
+    			<img src="img/fen.png" alt="">
+    		</div>
+    	</div>
+    </div>
+    
+
+
+
+	<script src='js/zepto.min.js'></script>
+	<script src='js/my.js'></script>
+	<script src='js/index.js'></script>
+    
+</body> 
+</html>
